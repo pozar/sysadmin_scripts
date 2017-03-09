@@ -1,7 +1,12 @@
 #!/bin/bash
 #
-# Creates the aggregate traffic graphs for the web site.
-# Meant to be run on the web site and use the LibreNMS API.
+# Creates the aggregate traffic graphs for the web site. See: 
+# https://www.sfmix.org/services/statistics
+# 
+# Meant to be run on the web site and call out to the LibreNMS API.
+# One thing that was handy here was leveraging Libre's concept of 
+# groups here to use this to identify ports we wanted to aggregate up. 
+# These are identified as "peering" in this script.
 #
 # The script should be added to cron with something like:
 # */5 * * * * /usr/local/sbin/create_public_graphs.sh > /dev/null 2>&1 
