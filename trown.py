@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+###########################################################
+# trown.py
+# This script will change the "unprivileged container" uid
+# and gids to regular numbers expected in /etc/passwd and /etc/group
+# You will need to tweak on the directory it will work on as well as 
+# any offset in ID numbers.  In my case the offset was 1,000,000.
+###########################################################
+
 import os
 import glob
 # root_dir needs a trailing slash (i.e. /foo/dir/)
