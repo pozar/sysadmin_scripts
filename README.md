@@ -21,3 +21,6 @@ Reports on file changes using debsums.  Good to run daily to see if things like 
 
 ## genrevptr.sh
 Generates a reverse zone file with PTR records for a /24.
+
+## trown.py
+Converts LXC container protected UID/GID files to standard ID for VMs
